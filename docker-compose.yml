@@ -34,7 +34,7 @@ services:
       # GOOGLE_CLIENT_ID: your_client_id
       # GOOGLE_CLIENT_SECRET: your_client_secret
     ports:
-      - "5500:5000"
+      - "55500:5000"
     volumes:
       - ./uploads:/app/uploads  # For any file uploads
     healthcheck:
