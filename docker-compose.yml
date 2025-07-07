@@ -12,7 +12,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
     ports:
-      - "5432:5432"
+      - "55432:5432"
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
@@ -34,7 +34,7 @@ services:
       # GOOGLE_CLIENT_ID: your_client_id
       # GOOGLE_CLIENT_SECRET: your_client_secret
     ports:
-      - "5000:5000"
+      - "5500:5000"
     volumes:
       - ./uploads:/app/uploads  # For any file uploads
     healthcheck:
